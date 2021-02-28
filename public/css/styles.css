@@ -1,7 +1,7 @@
 * {
 	/*background-color: #dd5e89;
 	background: linear-gradient(#dd5e89, #f7bb97);*/
-	height: 100%;
+	scroll-behavior: smooth;
 	margin: 0;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -12,7 +12,7 @@ body {
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	
+	background-color: #e4e1e1;
 }
 
 *.dark {
@@ -24,22 +24,46 @@ body {
 }
 
 
+
 /* Navbar */
+
 .navbar {
 	backface-visibility: hidden;
+	background-color: #dd5e89;
+}
+
+.navbar.dark {
+	background-color: rgb(27, 98, 100) !important;
+}
+
+.navbar-dark .navbar-nav { 
+	font-size: 15px; 	
+	font-weight: 600; 
+}
+
+.navbar-dark .navbar-nav .nav-link { 
+	color: #f7ececf5 !important; 
+	border: 0; 
+}
+
+.navbar-dark .navbar-nav .nav-link:focus:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:active { 
+	outline: 1; 
+	color: #ffffff !important;
+	
+}
+
+.navbar-expand-md .navbar-nav .nav-link { 
+	padding-left: 1rem; 
+	padding-right: 1rem; 
 }
 
 
-.navbar-dark .navbar-nav { font-size: 15px; color: #ffffff; font-weight: 600; }
-
-.navbar-dark .navbar-nav .nav-link { color: #ffffff; border: 0; }
-
-.navbar-dark .navbar-nav .nav-link:focus {  outline: 1; }
-
-.navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
 
 
 /* Toggle button */
+
 .toggleClass {
 	position: absolute;
 	top: 120px;
@@ -78,3 +102,44 @@ body {
 	overflow-x: hidden;
 }
 
+
+
+/* Footer */
+
+footer {
+	margin-top: 40%;
+	width: 100%;
+	padding: 40px 0 0 0;
+	position: absolute;
+	background: #dd5e89;
+	color: #ffffff;
+	text-align: left;
+}
+
+footer.dark {
+	background-color: rgb(27, 98, 100) !important;
+}
+
+.footer-right {
+	text-align: right;
+}
+
+.footer-right a {
+	margin: 0 6px;
+    font-size: 32px;
+    color: #f7ececf5;
+}
+.footer-right a:hover, .footer-right a:focus { color: #ffffff; }
+
+.footer-bottom {
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.footer-bottom a {
+	font-size: 32px;
+    color: #f7ececf5;
+    line-height: 40px;
+}
+
+.footer-bottom a:hover, .footer-bottom a:focus { color: #ffffff; }
