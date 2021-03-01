@@ -252,7 +252,7 @@ img { max-width: 100%; }
 
 
 /* Categories */
-
+/* 
 .categories-individual {
 	display: inline;
 	background-color:#dfe9ec;
@@ -302,7 +302,73 @@ img { max-width: 100%; }
 	.btn-primary {
 		margin-top: 40px;
 	}
+} */
+
+
+/***** Portfolio *****/
+ 
+.portfolio-box {
+    padding-top: 30px;
+    text-align: left;
 }
+ 
+.portfolio-box-image {
+    overflow: hidden;
+    border-radius: 4px;
+}
+ 
+.portfolio-box-image img {
+    -o-transition: all .8s;
+    -moz-transition: all .8s;
+    -webkit-transition: all .8s;
+    -ms-transition: all .8s;
+    transition: all .8s;
+}
+ 
+.portfolio-box-image:hover img {
+    -o-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+}
+ 
+.portfolio-box h3 {
+    margin-top: 30px;
+}
+.portfolio-box h3 a { color: #555; }
+.portfolio-box h3 a:hover, 
+.portfolio-box h3 a:focus { color: #9b59b6; }
+ 
+.portfolio-box h3 i {
+    padding-left: 10px;
+    color: #ccc;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+.portfolio-box h3:hover i { padding-left: 15px; }
+ 
+.portfolio-box-date {
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #aaa;
+    text-transform: uppercase;
+}
+ 
+.portfolio-box-date i {
+    padding-right: 5px;
+    color: #ddd;
+}
+ 
+.portfolio-container .section-bottom-button {
+    padding-top: 40px;
+}
+
+
+
 
 /* Let's build together */
 
