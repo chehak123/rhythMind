@@ -26,6 +26,9 @@
 		<!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+		<!-- JQuery CSS -->
+		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
         <!-- CSS -->
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -55,11 +58,8 @@
 		                    <a class="nav-link scroll-link" href="#how">BLOGS</a>
 		                </li>
 		                <li class="nav-item">
-		                    <a class="nav-link scroll-link" href="#how">MEDITATION</a>
+		                    <a class="nav-link scroll-link" href="#medisleep">MEDITATION & SLEEP</a>
 		                </li>
-		                <li class="nav-item">
-		        			<a class="nav-link scroll-link" href="#how">SLEEP</a>
-		      		  	</li>
 		                <li class="nav-item">
 		                    <a class="nav-link scroll-link" href="#how">LISTENING ROOM</a>
 		                </li>
@@ -68,19 +68,26 @@
 		    </div>
 		</nav>
 
+
+		<!-- Toggle Button -->
+		<!--<div class="toggleClass" onclick="toggleClass()">
+		</div>-->
+
+
+
 		<!-- Top Content -->
 		<div class="container" id="top-content-id">
-			<div class="row">
-				<img class="mt-0 topbulb-img img-fluid wow fadeInLeftBig float-left" src="images/topbulb.png" width="35%" margin-top="0" padding-top="0" z-index="-1">
-                	<img class="logo-img wow fadeInRightBig float-right" src="images/logo.png" align="right">
-                    <div class="col-md-8 offset-md-2 text-top">
+			<div class="row">	
+                	
+                    <div class="col-md-5 offset-md-2 text-top float-right">
                     	
-                    	
-                        <h1 class="wow top-head fadeInLeftBig">What is rhythMind ??</h1>
-                        <div class="description wow fadeInLeftBig">
-                        	<div class="col-md-8 offset-md-2 top-text ">
+                    	<img class="logo-img wow fadeIn float-left" src="images/girl_music.png">
+					</div>
+                        <h1 class="wow top-head fadeIn">What is rhythMind?</h1>
+                        <div class="description wow fadeInRightBig">
+                        	<div class="col-md-7 offset-md-2 top-text ">
 	                        	<p>
-	                         	26ideas is focused on building ideas from the basics and bringing it to life. We Ideate and we Build & Scale an idea with Founders as Co-founders.
+									A home of melody, dulcet soul food, self healing, mood lifting and a moment to be at one with your mind and its varied needs. Take a break from your anxiety, help yourself sleep soundly or just listen to songs that reflect your present emotions. We believe that all feelings, no matter how weird or tiring, deserve a place with music. Let our rhythms be in sync with your mind.
 	                        	</p>
                         	</div>
                         </div>            
@@ -89,35 +96,33 @@
 		</div>
 
 		<!-- How We Work -->
-        <div id="how" class="how-container section-container">
+        <div id="medisleep" class="how-container section-container">
         	<div class="container">
         		<div class="row">
-        			<div class="col-12 col-md-6 col-lg-6 how-box wow fadeInLeftBig">
-        				<div class="how-box-img">
-        					<img class="img-fluid col-5 col-md-8 col-lg-6" src="images/howbulb.png" alt="how">
-        				</div>
-        			</div>
         			<div class="col-12 col-md-6 col-lg-6 how-us-box wow fadeInLeft">
-	                    <div class="how-box-text float-right">
-	                    	<h2><strong>Meditation and Sleep</strong></h2>
-	                    	<br>
-	                    	<p class="medium-paragraph">
-	                    		26ideas works with founders to ideate, build and scale internet and technology companies. We provide deep operational support to entrepreneurs and help them build market-leading companies.
-	                    	</p>
-	                    	<p>
-	                    		<strong>01.</strong> We Build ideas from ground-up.<br>
-								<strong>02.</strong> We Partner with ambitious founders as co-founders.<br>
-								<strong>03.</strong> We Ideate whose/what problems can be solved by Tech.<br>
-								<strong>04.</strong> We Create lovable product in-house.<br>
-								<strong>05.</strong> We Provide a ready ecosystem and funding to get a product market ﬁt ASAP.<br>
-	                    	</p>
+	                    <div class="meditate-text float-left">
+	                    	<h2><strong>Meditate (because you deserve it)</strong></h2>
+							<p>This peaceful music by <a href="/users/timmoor-18879564/?tab=audio&amp;utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=audio&amp;utm_content=2819">TimMoor</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=2819">Pixabay</a> is sure to earn you your much earned "me" moment and make you feel more relaxed and peaceful.</p>
+							<div class="mediPlayer">
+								<audio class="listen" preload="none" data-size="250" src="sounds/meditation.mp3"></audio>
+							</div>
+	                    </div>
+	                </div>
+        			<div class="col-12 col-md-6 col-lg-6 how-us-box wow fadeInRight">
+	                    <div class="sleep-text float-right">
+	                    	<h2><strong>Sleep Sound Tonight</strong></h2>
+
+							<div class="mediPlayer">
+								<audio class="listen" preload="none" data-size="250" src="sounds/sleep.mp3"></audio>
+								<p><a href="https://www.inc.com/melanie-curtin/neuroscience-says-listening-to-this-one-song-reduces-anxiety-by-up-to-65-percent.html#:~:text=The%20group%20that%20created%20"Weightless,of%20the%20stress%20hormone%20cortisol.">Click here</a> to read what research has to say about 'Weightless', the world's most relaxing music. Or better yet, use it tonight to fall into a deep, fitful sleep.</p>
+							</div>
 	                    </div>
 	                </div>
         		</div> 
         	</div>
         </div>
 
-        <!-- Why And What -->
+        <!-- Why And What 
         <div class="why-container section-container">
         	<div class="container">
         		<div class="row">
@@ -157,39 +162,17 @@
 	                </div>
         		</div>
         	</div>
-        </div>
+        </div> -->
         
-        <!-- Testimonials -->
-		<!-- <h2 style="text-align: left; margin: 2%;"><strong>Blogs</strong></h2> -->
-		<!-- <div class="categories-container section-container">
-	    	<div class="container">
-	    		<h1 class="container-h1 wow fadeInLeft">Blogs</h1>
-	    		<div class="row">
-	    			<div class="categories-individual text-center d-md-inline align-items-center col-sm-4 col-md-3 wow fadeInLeftBig">
-	    				<p class="card-title">Co-founder CTO for an Ed-tech company</p>
-	    				<a href="#build" class="btn btn-primary">Apply Below</a>
-	    			</div>
-	    			<div class="categories-individual text-center align-items-center col-sm-4 col-md-3 wow fadeInLeftBig">
-	    				<p class="card-title">Co-founder CTO for a SaaS company</p>
-	    				<a href="#build" class="btn btn-primary">Apply Below</a>
-	    			</div>
-	    			<div class="categories-individual text-center align-items-center col-sm-4 col-md-3 wow fadeInLeftBig">
-	    				<p class="card-title">Co-founder Sales for a SaaS company</p>
-	    				<a href="#build" class="btn btn-primary">Apply Below</a>
-	    			</div>
-	    		</div>
-	    	</div>	    	
-	    </div> -->
 
 
- <!-- Portfolio -->
+
+ <!-- Blogs -->
 <div class="portfolio-container section-container">
     <div class="container">
         <div class="row">
             <div class="col portfolio section-description wow fadeIn">
-		<h2 style="text-align: left; margin: 2%;"><strong>Blogs</strong></h2>
-		<!-- <div class="divider-1 wow fadeInUp"><span></span></div>
-                <p>We've completed 537 projects since we started back in 2010. Check them out!</p> -->
+				<h2 style="text-align: left; margin: 2%;"><strong>Blogs</strong></h2>
             </div>
         </div>
         <div class="row">
@@ -197,8 +180,8 @@
                 <div class="portfolio-box-image">
                     <img src="images/blog1.jpg" alt="" data-at2x="images/blog1.jpg">
                 </div>
-                <h3><a href="https://www.openminds.org.au/news/5-positive-effects-music-mental-health#:~:text=Researchers%20from%20the%20MARCS%20Institute,positive%20effects%20toward%20mental%20health.">Music effects</a> <i class="fas fa-angle-right"></i></h3>
-                <!-- <div class="portfolio-box-date"><i class="far fa-calendar"></i> March 2018</div> -->
+                <h3><a href="https://www.openminds.org.au/news/5-positive-effects-music-mental-health#:~:text=Researchers%20from%20the%20MARCS%20Institute,positive%20effects%20toward%20mental%20health.">5 positive effects music has on your mental health</a> <i class="fas fa-angle-right"></i></h3>
+                <div class="portfolio-box-date"><i class="fas fa-blog" style="color: rgb(48, 46, 97);"></i> openminds</div> 
                 <p>Music is a powerful thing. Aside from its entertainment value, listening to
 					 music is known to have incredible positive...<a href="https://www.openminds.org.au/news/5-positive-effects-music-mental-health#:~:text=Researchers%20from%20the%20MARCS%20Institute,positive%20effects%20toward%20mental%20health.">Read more</a></p>
             </div>
@@ -206,16 +189,16 @@
                 <div class="portfolio-box-image">
                     <img src="images/blog3.jpg" alt="" data-at2x="images/blog3.jpg">
                 </div>
-                <h3><a href="https://au.reachout.com/articles/how-to-use-music-for-mental-health">Music Therapy</a> <i class="fas fa-angle-right"></i></h3>
-                <!-- <div class="portfolio-box-date"><i class="far fa-calendar"></i> January 2018</div> -->
+                <h3><a href="https://au.reachout.com/articles/how-to-use-music-for-mental-health">How to use music for mental health</a> <i class="fas fa-angle-right"></i></h3>
+                 <div class="portfolio-box-date"><i class="fas fa-blog" style="color: rgb(48, 46, 97);"></i> REACHOUT.com</div> 
                 <p>It doesn’t matter if you love metal, pop or EDM, music can help your mood and help you cope with (or even take control of) tricky emotions... <a href="https://au.reachout.com/articles/how-to-use-music-for-mental-health">Read more</a></p>
             </div>
             <div class="col-md-4 portfolio-box wow fadeInDown">
                 <div class="portfolio-box-image">
                     <img src="images/blog2.jpg" alt="" data-at2x="images/blog2.jpg">
                 </div>
-                <h3><a href="https://www.verywellmind.com/surprising-psychological-benefits-of-music-4126866">Mental Health</a> <i class="fas fa-angle-right"></i></h3>
-                <!-- <div class="portfolio-box-date"><i /class="far fa-calendar"></i> February 2018</div> -->
+                <h3><a href="https://www.verywellmind.com/surprising-psychological-benefits-of-music-4126866">How Listening to Music Can Have Psychological Benefits</a> <i class="fas fa-angle-right"></i></h3>
+					<div class="portfolio-box-date"><i class="fas fa-blog" style="color: rgb(48, 46, 97);"></i> verywell mind</div>
                 <p>Listening to music can be entertaining, and some research suggests that it might even make you healthier. Music can be a source of pleasure and...<a href="https://www.verywellmind.com/surprising-psychological-benefits-of-music-4126866">Read more</a></p>
             </div>
            
@@ -226,12 +209,6 @@
 
 
 
-		  	<!-- Bottom Image -->
-		  	<!-- <div class="container">
-		  		<div class="row">
-		  			<img class="bottom-img col-10 col-md-4 col-lg-5 wow fadeInLeft" src="images/cup.png">
-		  		</div>
-		  	</div> -->
 
         <!-- Footer -->
         <footer>
@@ -239,7 +216,7 @@
 	        	<div class="row">
                     <div class="col-md-5 footer-left">
                     	<p>
-                    	 Made with <i class="fas fa-heart"></i>, rhythMind is a home of melody, dulcet soul food, self healing and a moment to be at one with your mind and its varied needs. Take a break from your anxiety, help yourself sleep.
+                    	 <img src="images/favicon.png" style="width: 47px;">  Made with <i class="fas fa-heart"></i>, rhythMind
                     	</p>
                     </div>
                     
@@ -256,30 +233,49 @@
 	        </div>
         </footer>
 
-        <!-- Javascript files -->
-        <!--<script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/jquery-migrate-3.0.0.min.js"></script>
-		<script src="js/jquery.backstretch.min.js"></script>-->
+
+
+        <!-- Custom Javascript files -->
+		
 		<script type="text/javascript" src="js/scripts.js"></script>
         <script type="text/javascript" src="js/wow.min.js"></script>
 
 
-        <script>
-        	/*Wow*/
-
-		    new WOW().init();
-
-        </script>
-
-        <!--<script src="js/retina-1.1.0.min.js"></script>
-        <script src="js/waypoints.min.js"></script>-->
 
 
+		<script>
+			new WOW().init();
 
-        <!-- Bootstrap Javascript -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			$(document).ready(function () {
+				$('.mediPlayer').mediaPlayer();
+			});
+		</script>
+
+		
+
+
+        
+
+
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="js/player.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$('.mediPlayer').mediaPlayer();
+			});
+		</script>
+
+		<!-- Bootstrap Javascript -->
+		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+		<!-- FA JS -->
+		<script
+        src="https://kit.fontawesome.com/22a2749f4c.js"
+        crossorigin="anonymous"
+      ></script>
 
 	</body>
 
