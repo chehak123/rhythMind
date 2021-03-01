@@ -99,213 +99,71 @@ img { max-width: 100%; }
 
 .navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
 
+
+
 /* Top Content */
 
 .logo-img {
 	margin-top: 14%;
-	margin-left: 15%;
 
-	height: 300px;
+
+	height: 450px;
 }
 
-.topbulb-img {
-	padding-top: 45px;
+.top-text {
+	width: 90%;;
 }
 
-@media screen and (max-width: 420px)
-{
-	.topbulb-img {
-		margin:0 auto;
-		margin-top: 80px;
-	}
-
-	.logo-img {
-		margin-left:5%;
-	}
+.top-head {
+	margin-top: 30%;
 }
 
-@media screen and (max-width: 550px)
-{
-	.top-head {
-		margin-top: 30%;
-	}
-}
+
 
 @media screen and (max-width: 768px)
 {
 	.logo-img {
-		height: 250px;
+		height: 300px;
 		padding-top: 40px;
 	}
 }
 
-@media screen and (max-width: 1000px)
-{
-	.topbulb-img {
-		padding-top: 65px;
-	}
-}
 
-/*How We Work*/
+
+
+
+/* Meditation and Sleep */
 
 .how-container {
 	margin: 2%;
-	padding: 7%;
+	padding: 6%;
 	background-color:#dfe9ec;
 	transform: skew(0deg, -5deg);
 	margin-top: 4%;
 	border-radius: 2%;
 }
 
-.how-box-text {
+.sleep-text {
 	text-align: left;
-	color: #dfe9ec;
+	margin-left: 8%;
 	font-weight: 400;
 	font-size: 1rem;
 	transform: skew(0, 5deg);
 }
 
-.how-box-img {
+.meditate-text {
 	margin-left: 2%;
 	transform: skew(0, 5deg);
-}
-
-/* Why And What */
-
-.why-box-text {
-	margin-top: 5%;
-	text-align: left;
-}
-
-.why-box-img {
-	margin-top: 2%;
-}
-
-@media screen and (max-width: 600px) 
-{
-	#why-sm {
-		transform: skew(0deg, -4deg);
-	}
-
-	.why-box-text {
-		margin-top: 7%;
-	}
+	margin-right: 5%;
 }
 
 
 
-/* Testimonials */
-/* 
-.testimonial-list .testimonial-text {
-	margin-top: 5%;
-	opacity: 0.8;
-	margin-bottom: 8%;
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-.testimonial-list .nav-tabs {
-	margin-top: 45px;
-    border: 0;
-    justify-content: center;
-}
-
-.testimonial-list .nav-tabs li {
-	margin-left: 10px;
-    margin-right: 10px;
-}
-
-.testimonial-list .nav-tabs li a {
-    width: 16px;
-    height: 16px;
-    padding: 0;
-    border: 2px solid black;
-    border-color: rgba(255, 255, 255, 0.8);
-    -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;
-}
-
-.testimonial-list .nav-tabs li a:hover,
-.testimonial-list .nav-tabs li a:focus {
-	background: #000000;
-	background: rgba(255, 255, 255, 0.8);
-    border: 1px solid black;
-    border-color: rgba(255, 255, 255, 0.8);
-}
-
-.testimonial-list .nav-tabs li a.active,
-.testimonial-list .nav-tabs li a.active:focus {
-	background: #ffffff;
-	border: 0;
-}
-
-.testimonial-text {
-	color: #000000;
-	font-family: 'Indie Flower', cursive;
-}
-
-.testimonials-section {
-	background-color: #FFCF00;
-	margin: 2%;
-	border-radius: 30px;
-	font-size: 1.2rem;
-} */
 
 
-/* Categories */
-/* 
-.categories-individual {
-	display: inline;
-	background-color:#dfe9ec;
-	border-radius: 10px;
-	width: 330px;
-	height: 320px;
-	margin-left: 2%;
-	margin-right: 2%;
-	margin-top: 3%;
-	align-items: center;
-}
-
-.card-title {
-	text-align: center;
-	padding-top: 20%;
-	color: #000000;
-	font-weight: 600;
-	align-items: center;
-}
-
-.container-h1 {
-	text-align: left;
-	margin-top: 10%;
-}
-
-.btn-primary {
-	margin-top: 70px;
-	background-color: #345CAA;
-	border-color: #AEC6CF;
-	border-radius: 20px;
-}
-
-.btn-primary:hover {
-	background-color: #ffffff;
-	color: #345CAA;
-}
-
-@media screen and (max-width: 450px)
-{
-	.categories-individual {
-		align-items: center;
-		height: 220px;
-		margin-left: 18%;
-		border-radius: 50%;
-	}
-
-	.btn-primary {
-		margin-top: 40px;
-	}
-} */
 
 
-/***** Portfolio *****/
+/***** Blog *****/
  
 .portfolio-box {
     padding-top: 30px;
@@ -338,7 +196,10 @@ img { max-width: 100%; }
 }
 .portfolio-box h3 a { color: #555; }
 .portfolio-box h3 a:hover, 
-.portfolio-box h3 a:focus { color: #9b59b6; }
+.portfolio-box h3 a:focus { 
+	color: #121463;
+	font-weight: 600;
+ }
  
 .portfolio-box h3 i {
     padding-left: 10px;
@@ -355,7 +216,6 @@ img { max-width: 100%; }
     padding-bottom: 10px;
     font-size: 14px;
     color: #aaa;
-    text-transform: uppercase;
 }
  
 .portfolio-box-date i {
@@ -370,38 +230,6 @@ img { max-width: 100%; }
 
 
 
-/* Let's build together */
-
-.connect {
-	font-size: 1.2rem;
-}
-
-.build-box-text {
-	text-align: left;
-}
-
-@media screen and (min-width: 740px)
-{
-	.build-box-text {
-		margin-top: 50px;
-	}
-}
-
-@media screen and (min-width: 760px)
-{
-	.build-box-img {
-		margin-top: 5%;
-	}
-}
-
-
-/* Bottom image */
-.bottom-img {
-	margin-top: 50px;
-	align-items: center;
-	width: 10%;
-	margin:0 auto;
-}
 
 
 /* Footer */
@@ -420,7 +248,7 @@ footer {
 }
 
 .footer-right a {
-	margin: 0 6px;
+	margin: 10% 9px;
     font-size: 32px;
     color: #ffffff;
 }
@@ -443,3 +271,103 @@ footer {
 
 body, html {
     overflow-x: hidden; }
+
+
+
+
+/* Toggle button 
+
+.toggleClass {
+	position: absolute;
+	top: 120px;
+	right: 150px;
+	width: 20px;
+	margin: 2px;
+	height: 20px;
+	font-size: 18px;
+	border-radius: 50%;
+	background: #091921;
+    color: #091921;
+	cursor: pointer;
+
+	align-items: center;
+}
+
+.toggleClass:before {
+	position: absolute;
+	content: 'Dark Mode';
+	white-space: nowrap;
+	left: 25px;
+}
+
+body.dark .toggleClass {
+	background: #d1dae3;
+	color: #d1dae3;
+    content: 'Light Mode';
+}
+
+body.dark .toggleClass:before {
+	content: 'Light Mode';
+	white-space: nowrap;
+} */
+
+
+
+
+
+
+
+/* Sleep and Meditation media player */
+
+.mediPlayer .control {
+    opacity        : 0; /* transition: opacity .2s linear; */
+    pointer-events : none;
+    cursor         : pointer;
+}
+
+.mediPlayer .not-started .play, .mediPlayer .paused .play {
+    opacity : 1;
+
+}
+
+.mediPlayer .playing .pause {
+    opacity : 1;
+
+}
+
+.mediPlayer .playing .play {
+    opacity : 0;
+}
+
+.mediPlayer .ended .stop {
+    opacity        : 1;
+    pointer-events : none;
+}
+
+.mediPlayer .precache-bar .done {
+    opacity : 0;
+}
+
+.mediPlayer .not-started .progress-bar, .mediPlayer .ended .progress-bar {
+    display : none;
+}
+
+.mediPlayer .ended .progress-track {
+    stroke-opacity : 1;
+}
+
+.mediPlayer .progress-bar,
+.mediPlayer .precache-bar {
+    transition        : stroke-dashoffset 500ms;
+
+    stroke-dasharray  : 298.1371428256714;
+    stroke-dashoffset : 298.1371428256714;
+}
+
+.mediPlayer a {
+	text-decoration:double;
+}
+
+.mediPlayer a:focus, .mediPlayer a:hover, mediPlayer a:active {
+	font-weight: 600;
+}

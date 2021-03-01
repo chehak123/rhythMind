@@ -34,11 +34,19 @@ jQuery(document).ready(function() {
 });
 
 
-jQuery(window).load(function() {
-	
-	/*
-		Hidden images
-	*/
-	$(".testimonial-image img").attr("style", "width: auto !important; height: auto !important;");
-	
-});
+
+
+
+/* Toggle button 
+
+function toggleClass()
+{
+	const body=document.querySelector('body');
+	body.classList.toggle('dark');
+	body.style.transition= '0.5s linear';
+}*/
+
+
+
+
+
