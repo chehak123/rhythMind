@@ -124,8 +124,9 @@ img { max-width: 100%; }
 @media screen and (max-width: 768px)
 {
 	.logo-img {
-		height: 300px;
+		height: 350px;
 		padding-top: 40px;
+		align-items: center;
 	}
 
 	.top-head {
@@ -311,10 +312,22 @@ body.dark .toggleClass {
     content: 'Light Mode';
 }
 
+*.dark {
+	background: linear-gradient(#16222a, #3a6073);
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.navbar.dark {
+	background-color: rgb(27, 98, 100) !important;
+}
+
 body.dark .toggleClass:before {
 	content: 'Light Mode';
 	white-space: nowrap;
-} */
+} 
 
 
 
