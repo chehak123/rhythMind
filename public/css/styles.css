@@ -106,16 +106,17 @@ img { max-width: 100%; }
 .logo-img {
 	margin-top: 14%;
 
-
+	margin-right: 20%;
 	height: 450px;
 }
 
-.top-text {
-	width: 90%;;
+.top-img {
+	margin-left: 4%;
 }
 
 .top-head {
 	margin-top: 30%;
+	margin-left: 8%;
 }
 
 
@@ -125,6 +126,10 @@ img { max-width: 100%; }
 	.logo-img {
 		height: 300px;
 		padding-top: 40px;
+	}
+
+	.top-head {
+		margin-top: 5%;
 	}
 }
 
@@ -197,7 +202,7 @@ img { max-width: 100%; }
 .portfolio-box h3 a { color: #555; }
 .portfolio-box h3 a:hover, 
 .portfolio-box h3 a:focus { 
-	color: #121463;
+	color: #346d7e;
 	font-weight: 600;
  }
  
