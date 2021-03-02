@@ -57,12 +57,39 @@ img { max-width: 100%; }
 .hero{
 	margin-top: 10vh;
 	margin-bottom: 10vh;
-	padding-top: 15vh;
+	padding-top: 10vh;
 	padding-bottom: 6vh;
 }
 
 .feeling p{
 	font-size: 5vw;
+}
+
+.feeling-buttons{
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	align-content: center;
+	align-items: center;
+}
+
+.feeling-buttons2{
+	align-items: center;
+	align-content: center;
+	margin-left: auto;
+}
+
+ .mood{
+   margin-right: 1vw;
+   margin-left: 1vw;
+   border-radius: 40px;
+   height: 70px;
+   width: 150px;
+   background-color: white;
+   border: 1px solid rgb(107, 107, 107);
+}
+
+.mood:hover{
+	border: 2px solid #346d7e;
 }
 
 
