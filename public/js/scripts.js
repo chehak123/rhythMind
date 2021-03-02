@@ -1,4 +1,52 @@
 
+
+
+// typing effect
+
+const words = ["excited", "sleepy", "gloomy"];
+let i = 0;
+let timer;
+
+function typingEffect() {
+	let word = words[i].split("");
+	var loopTyping = function() {
+		if (word.length > 0) {
+			document.getElementById('word').innerHTML += word.shift();
+		} else {
+			deletingEffect();
+			return false;
+		};
+		timer = setTimeout(loopTyping, 500);
+	};
+	loopTyping();
+};
+
+function deletingEffect() {
+	let word = words[i].split("");
+	var loopDeleting = function() {
+		if (word.length > 0) {
+			word.pop();
+			document.getElementById('word').innerHTML = word.join("");
+		} else {
+			if (words.length > (i + 1)) {
+				i++;
+			} else {
+				i = 0;
+			};
+			typingEffect();
+			return false;
+		};
+		timer = setTimeout(loopDeleting, 200);
+	};
+	loopDeleting();
+};
+
+typingEffect();
+
+
+
+
+
 function scroll_to(clicked_link, nav_height) {
 	var element_class = clicked_link.attr('href').replace('#', '.');
 	var scroll_to = 0;
@@ -45,8 +93,3 @@ function toggleClass()
 	body.classList.toggle('dark');
 	body.style.transition= '0.5s linear';
 }*/
-
-
-
-
-

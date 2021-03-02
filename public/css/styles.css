@@ -39,6 +39,45 @@ img { max-width: 100%; }
 	font-size: 17px;
 	line-height: 32px;
 }
+
+.blink {
+	animation: blink 0.5s infinite;
+  }
+  @keyframes blink{
+	to { opacity: .0; }
+  }
+  .flex {
+	  display: flex;
+  }
+  .header-sub-title {
+	color:#346d7e ;
+	font-size: 5vw;
+  }
+
+.hero{
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	padding-top: 15vh;
+	padding-bottom: 6vh;
+}
+
+.feeling p{
+	font-size: 5vw;
+}
+
+
+@media screen and (max-width: 400px)
+{
+	.header-sub-title {
+		font-size: 27px;
+	  }
+
+	  .feeling p{
+		  font-size: 27px;
+	  }
+}
+
+
 .section-container {
     margin: 0 auto;
     padding-bottom: 80px;
@@ -162,11 +201,6 @@ img { max-width: 100%; }
 	transform: skew(0, 5deg);
 	margin-right: 5%;
 }
-
-
-
-
-
 
 
 /***** Blog *****/
