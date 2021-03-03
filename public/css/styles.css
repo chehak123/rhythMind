@@ -88,9 +88,13 @@ img { max-width: 100%; }
    border: 1px solid rgb(107, 107, 107);
 }
 
-.mood:hover{
-	border: 2px solid #346d7e;
+.mood:hover,.mood:active,.mood:focus {
+	background-color: #346d7e;
+	color: #ffffff;
+	border: double;
 }
+
+
 
 
 @media screen and (max-width: 400px)
@@ -356,7 +360,6 @@ body, html {
 
 
 /* Toggle button 
-
 .toggleClass {
 	position: absolute;
 	top: 120px;
@@ -369,23 +372,19 @@ body, html {
 	background: #091921;
     color: #091921;
 	cursor: pointer;
-
 	align-items: center;
 }
-
 .toggleClass:before {
 	position: absolute;
 	content: 'Dark Mode';
 	white-space: nowrap;
 	left: 25px;
 }
-
 body.dark .toggleClass {
 	background: #d1dae3;
 	color: #d1dae3;
     content: 'Light Mode';
 }
-
 *.dark {
 	background: linear-gradient(#16222a, #3a6073);
 	height: 100%;
@@ -393,22 +392,13 @@ body.dark .toggleClass {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
-
 .navbar.dark {
 	background-color: rgb(27, 98, 100) !important;
 }
-
 body.dark .toggleClass:before {
 	content: 'Light Mode';
 	white-space: nowrap;
 } 
-
-
-
-
-
-
-
 /* Sleep and Meditation media player */
 
 .mediPlayer .control {
