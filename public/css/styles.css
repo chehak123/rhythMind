@@ -233,7 +233,7 @@ img { max-width: 100%; }
 }
 
 .sleep-text {
-	text-align: left;
+	text-align: center;
 	margin-left: 8%;
 	font-weight: 400;
 	font-size: 1rem;
@@ -245,6 +245,8 @@ img { max-width: 100%; }
 	transform: skew(0, 5deg);
 	margin-right: 5%;
 }
+
+
 
 
 /***** Blog *****/
