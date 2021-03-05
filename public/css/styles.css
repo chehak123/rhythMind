@@ -455,3 +455,13 @@ body.dark .toggleClass:before {
 .mediPlayer a:focus, .mediPlayer a:hover, mediPlayer a:active {
 	font-weight: 600;
 }
+
+
+
+/* carousel */
+
+
+.carousel-inner img{
+	height: 100vh;
+	width: auto;
+}
