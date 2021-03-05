@@ -83,8 +83,6 @@ jQuery(document).ready(function() {
 
 
 
-
-
 /* Toggle button 
 
 function toggleClass()
