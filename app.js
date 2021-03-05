@@ -24,6 +24,10 @@ app.get("/fireflies", (req, res) => {
   res.render("fireflies");
 });
 
+app.get("/snow", (req, res) => {
+  res.render("snow");
+});
+
 
 app.listen(port, function() {
   console.log("Server started on port 3000.");
