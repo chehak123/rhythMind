@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Rain</title>
+    <title>Camp</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
@@ -15,10 +15,7 @@
 
   
 
-body {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
+
 
 .dot{
   width:4px;
@@ -31,27 +28,33 @@ body {
 }
 
 body {
-  background: linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ),url(images/firefly_bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(images/firefly_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  overflow-x: hidden;
+  overflow-y: hidden;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
+
  .firefly-container {
-  overflow: hidden;
-  width:100%; 
-  height: 100%;
-  background-size: cover;
-  background: url(p5img/firefly_bg.jpg);
+
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/firefly_bg.jpg);
+   padding: 0;
+        margin: 0;
+        /*height: 87vh;*/
+        height: 100%;
+        width: 100%;
+        
+        background-repeat: no-repeat;
+        /*margin: 2% 5% auto 5%;*/
+        background-size: 100% 100%;
 }
 
 
-* {
-  box-sizing: border-box;
-}
 
-body {
-  background-color: #111;
-}
 
 @keyframes scaleUpDown {
   0%,
@@ -110,7 +113,7 @@ body {
 .fire {
   position: absolute;
   top: calc(91% - 40px);
-  left: calc(10% - 50px);
+  left: calc(36% - 50px);
   width: 100px;
   height: 100px;
   background-color: transparent;
@@ -270,7 +273,6 @@ body {
         border-color: #000000;
         color: #000000;
         font-weight: 800;
-        box-shadow: 
         outline: none !important;
       }
 
@@ -279,37 +281,37 @@ body {
     
   </head>
   <body>
-            <button class="rain-btn" onclick="openFullscreen();">Go  Fullscreen</button>
-              <audio controls loop autoplay class="rain_sound" >
-                <source src="sounds/firefly_s.mp3" type="audio/mp3">
-              </audio>
+    <button class="rain-btn" onclick="openFullscreen();">Go  Fullscreen</button>
+    <audio controls loop autoplay class="rain_sound" >
+       <source src="sounds/firefly_s.mp3" type="audio/mp3">
+    </audio>
     <div class="firefly-container" controls id="myvideo">
-
+      <div class="fire">
+        <div class="fire-left">
+          <div class="main-fire"></div>
+          <div class="particle-fire"></div>
+        </div>
+        <div class="fire-main">
+          <div class="main-fire"></div>
+          <div class="particle-fire"></div>
+        </div>
+        <div class="fire-right">
+          <div class="main-fire"></div>
+          <div class="particle-fire"></div>
+        </div>
+        <div class="fire-bottom">
+          <div class="main-fire"></div>
+        </div>
+      </div>
+      
       
     </div>
 
-              <div class="fire">
-  <div class="fire-left">
-    <div class="main-fire"></div>
-    <div class="particle-fire"></div>
-  </div>
-  <div class="fire-main">
-    <div class="main-fire"></div>
-    <div class="particle-fire"></div>
-  </div>
-  <div class="fire-right">
-    <div class="main-fire"></div>
-    <div class="particle-fire"></div>
-  </div>
-  <div class="fire-bottom">
-    <div class="main-fire"></div>
-  </div>
-</div>
-
+              
 
     <script type="text/javascript">
 
-        var elem = document.getElementById("myvideo");
+        var elem = document.querySelector("#myvideo");
         function openFullscreen() {
           if (elem.requestFullscreen) {
             elem.requestFullscreen();
