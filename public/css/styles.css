@@ -457,10 +457,59 @@ body.dark .toggleClass:before {
 }
 
 
+.glass .landscape {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  }
+
+  .glass img{
+	width: 100%;
+  height: 100%;
+  }
+
+  .glass img{
+	width: 100%;
+	height: 100%;
+  }
+
+  @-webkit-keyframes eye-focus {
+	0% {
+	  -webkit-filter: blur(0);
+	}
+	100% {
+	  -webkit-filter: blur(10px);
+	}
+  }
+  @-webkit-keyframes focus-shift {
+	0% {
+	  transform: scale(1)
+	}
+	100% {
+	  transform: scale(1.01)
+	}
+  }
+  $duration: 3s;
+  .landscape {
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/54046/rainy_landscape.jpeg);
+	background-size: cover;
+	background-position: center;
+	filter: blur(1em);
+	animation: eye-focus $duration ease-in infinite alternate, 
+	  focus-shift $duration ease-in infinite alternate;
+  }
+  .glass {
+	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/54046/glass_droplets.jpeg);
+	filter: blur(0);
+	animation: eye-focus $duration ease-in infinite $duration alternate, 
+	  focus-shift $duration ease-in infinite alternate;
+	opacity: 0.5;
+  }
+
+
+
 
 /* carousel */
-
-
 
 .carousel-fade .carousel-item {
 	opacity: 0;

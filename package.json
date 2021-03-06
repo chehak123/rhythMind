@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/chehak123/GirlMeetup#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
@@ -27,6 +30,7 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^6.0.1",
+    "passport-spotify": "^2.0.0",
     "request": "^2.88.2"
   }
 }
