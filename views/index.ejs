@@ -68,7 +68,7 @@
 		                </li>
 						
 						<li class="nav-item">
-		                    <a class="nav-link scroll-link" href=""><button type="button" class="login-btn btn">LOGIN with <i class="fa fa-spotify" aria-hidden="true"></i></button></a>
+		                    <a class="nav-link scroll-link"><button type="button" class="login-btn btn">Logged in as <%=currentUser%></button></a>
 		                </li>
 		            </ul>
 		        </div>
@@ -76,10 +76,17 @@
 		</nav>
 
 
-		<!-- Toggle Button 
-		<div class="toggleClass" onclick="toggleClass()">
-		</div>-->
-
+		
+		<% if(songs.s1) { %>
+			<iframe src="https://open.spotify.com/embed/track/<%=songs.s1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			<iframe src="https://open.spotify.com/embed/track/<%=songs.s2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			<br>
+			<iframe src="https://open.spotify.com/embed/playlist/<%=songs.p1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			<iframe src="https://open.spotify.com/embed/playlist/<%=songs.p2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			<br>
+			<iframe src="https://open.spotify.com/embed/album/<%=songs.a1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			<iframe src="https://open.spotify.com/embed/album/<%=songs.a2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+			<% } %>
 
 		<!-- hero element -->
     <div id="herosection">
@@ -93,25 +100,25 @@
 			</p>
 			</div>
 			<br>
-      <div style= "margin-left: 5vw;">
-            <div class="feeling-buttons flex col-md-9 offset-md-2 top-text">
-				<button type="button" class="btn mood" onclick="feelAlert()">Calm</button>
-				<button type="button" class="btn mood" onclick="feelAlert()">Sleepy</button>
-				<button type="button" class="btn mood" onclick="feelAlert()">Gloomy</button>
+			<div style= "margin-left: 5vw;">
+				<div class="feeling-buttons flex col-md-9 offset-md-2 top-text">
+					<a href="<%=currentUser%>/search/calm/"><button type="button" class="btn mood">Calm</button></a>
+					<a href="<%=currentUser%>/search/sleepy/"><button type="button" class="btn mood">Sleepy</button></a>
+					<a href="<%=currentUser%>/search/gloomy/"><button type="button" class="btn mood">Gloomy</button></a>
+				</div>
+	
+				<div class="feeling-buttons2 flex col-md-9 offset-md-2 top-text">
+					<a href="<%=currentUser%>/search/excited/"><button type="button" class="btn mood">Excited</button></a>
+					<a href="<%=currentUser%>/search/romantic/"><button type="button" class="btn mood">Romantic</button></a>
+					
+				</div>
+	
+				<div class="feeling-buttons flex col-md-9 offset-md-2 top-text">
+					<a href="<%=currentUser%>/search/anxious/"><button type="button" class="btn mood">Anxious</button>
+						<a href="<%=currentUser%>/search/depressed/"><button type="button" class="btn mood">Depressed</button></a>
+							<a href="<%=currentUser%>/search/cheerful/"><button type="button" class="btn mood">Cheerful</button></a>
+				</div>
 			</div>
-
-			<div class="feeling-buttons2 flex col-md-9 offset-md-2 top-text">
-				<button type="button" class="btn mood" onclick="feelAlert()">Excited</button>
-				<button type="button" class="btn mood" onclick="feelAlert()">Romantic</button>
-				
-			</div>
-
-			<div class="feeling-buttons flex col-md-9 offset-md-2 top-text">
-				<button type="button" class="btn mood" onclick="feelAlert()">Anxious</button>
-				<button type="button" class="btn mood" onclick="feelAlert()">Depressed</button>
-				<button type="button" class="btn mood" onclick="feelAlert()">Cheerful</button>
-			</div>
-        </div>
     </div>
 
 </div>
