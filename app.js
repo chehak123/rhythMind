@@ -68,6 +68,10 @@ app.get("/snow",(req,res)=>{
   res.redirect("snow");
 })
 
+app.get("/sea",(req,res)=>{
+  res.redirect("sea");
+})
+
 app.get("/rain",(req,res)=>{
   res.redirect("rain");
 })

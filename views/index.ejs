@@ -75,19 +75,6 @@
 		    </div>
 		</nav>
 
-
-		
-		<% if(songs.s1) { %>
-			<iframe src="https://open.spotify.com/embed/track/<%=songs.s1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			<iframe src="https://open.spotify.com/embed/track/<%=songs.s2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			<br>
-			<iframe src="https://open.spotify.com/embed/playlist/<%=songs.p1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			<iframe src="https://open.spotify.com/embed/playlist/<%=songs.p2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			<br>
-			<iframe src="https://open.spotify.com/embed/album/<%=songs.a1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			<iframe src="https://open.spotify.com/embed/album/<%=songs.a2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			<% } %>
-
 		<!-- hero element -->
     <div id="herosection">
 		<div class="container hero" id="top-content-id"  style="margin-top: 20vh;">
@@ -102,26 +89,44 @@
 			<br>
 			<div style= "margin-left: 5vw;">
 				<div class="feeling-buttons flex col-md-9 offset-md-2 top-text">
-					<a href="<%=currentUser%>/search/calm/"><button type="button" class="btn mood">Calm</button></a>
-					<a href="<%=currentUser%>/search/sleepy/"><button type="button" class="btn mood">Sleepy</button></a>
-					<a href="<%=currentUser%>/search/gloomy/"><button type="button" class="btn mood">Gloomy</button></a>
+					<a href="<%=currentUser%>/search/calm/#songs"><button type="button" class="btn mood">Calm</button></a>
+					<a href="<%=currentUser%>/search/sleepy/#songs"><button type="button" class="btn mood">Sleepy</button></a>
+					<a href="<%=currentUser%>/search/gloomy/#songs"><button type="button" class="btn mood">Gloomy</button></a>
 				</div>
 	
 				<div class="feeling-buttons2 flex col-md-9 offset-md-2 top-text">
-					<a href="<%=currentUser%>/search/excited/"><button type="button" class="btn mood">Excited</button></a>
-					<a href="<%=currentUser%>/search/romantic/"><button type="button" class="btn mood">Romantic</button></a>
+					<a href="<%=currentUser%>/search/excited/#songs"><button type="button" class="btn mood">Excited</button></a>
+					<a href="<%=currentUser%>/search/romantic/#songs"><button type="button" class="btn mood">Romantic</button></a>
 					
 				</div>
 	
 				<div class="feeling-buttons flex col-md-9 offset-md-2 top-text">
-					<a href="<%=currentUser%>/search/anxious/"><button type="button" class="btn mood">Anxious</button>
-						<a href="<%=currentUser%>/search/depressed/"><button type="button" class="btn mood">Depressed</button></a>
-							<a href="<%=currentUser%>/search/cheerful/"><button type="button" class="btn mood">Cheerful</button></a>
+					<a href="<%=currentUser%>/search/anxious/#songs"><button type="button" class="btn mood">Anxious</button>
+						<a href="<%=currentUser%>/search/depressed/#songs"><button type="button" class="btn mood">Depressed</button></a>
+							<a href="<%=currentUser%>/search/cheerful/#songs"><button type="button" class="btn mood">Cheerful</button></a>
 				</div>
 			</div>
     </div>
 
 </div>
+
+<div id="songs">
+<% if(songs.s1) { %>
+	<h3><strong>Songs Recommended</strong></h3>
+	<iframe src="https://open.spotify.com/embed/track/<%=songs.s1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://open.spotify.com/embed/track/<%=songs.s2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<br><br><br>
+	<h3><strong>Playlist Recommended</strong></h3>
+	<iframe src="https://open.spotify.com/embed/playlist/<%=songs.p1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://open.spotify.com/embed/playlist/<%=songs.p2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<br><br><br>
+	<h3><strong>Album Recommended</strong></h3>
+	<iframe src="https://open.spotify.com/embed/album/<%=songs.a1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://open.spotify.com/embed/album/<%=songs.a2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<% } %>
+</div>
+
+
 		<!-- Top Content -->
 		<div id="about">
 		<div class="container" id="top-content-id">
@@ -144,7 +149,9 @@
 			</div>
 
 
-			<div style="width: 100vw; height: 70vh; margin-top:20vh;">
+			<div style="width: 100vw; height: 90vh; margin-top:20vh;">
+				<h2 style="text-align: left; margin: 2%; font-size: 35px;"><strong>Let's exercise together</strong></h2>
+				<br>
 				<div class="landscape"></div>
 				<div class="glass"></div>
 				</div>
@@ -188,9 +195,10 @@
 		<br>
 
         <div class="row">
-			<div class="col footer-bottom">
+			<div class="col footer-bottom" style="margin-bottom: 80px;">
+				<h2>any heading</h2>
 				   <a class="scroll-link" href="#carouselExampleControls"><i style="color: rebeccapurple;" class="fas fa-chevron-down"></i></a>
-			   </div>
+				</div>
 		</div>
 
 		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
