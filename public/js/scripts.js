@@ -91,3 +91,12 @@ function toggleClass()
 	body.classList.toggle('dark');
 	body.style.transition= '0.5s linear';
 }*/
+
+
+function feelAlert() {
+	alert("Please sign in with Spotify to access this feature!");
+  }
+
+
+
+
