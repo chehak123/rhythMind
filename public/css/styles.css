@@ -456,21 +456,16 @@ body.dark .toggleClass:before {
 	font-weight: 600;
 }
 
-
-.glass .landscape {
+  .landscape{
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 50vh;
   }
 
-  .glass img{
+  .glass{
+	position: absolute;
 	width: 100%;
-  height: 100%;
-  }
-
-  .glass img{
-	width: 100%;
-	height: 100%;
+	height: 50vh;
   }
 
   @-webkit-keyframes eye-focus {
@@ -489,24 +484,21 @@ body.dark .toggleClass:before {
 	  transform: scale(1.01)
 	}
   }
-  $duration: 3s;
   .landscape {
 	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/54046/rainy_landscape.jpeg);
 	background-size: cover;
 	background-position: center;
 	filter: blur(1em);
-	animation: eye-focus $duration ease-in infinite alternate, 
-	  focus-shift $duration ease-in infinite alternate;
+	animation: eye-focus 3s ease-in infinite alternate, 
+	  focus-shift 3s ease-in infinite alternate;
   }
   .glass {
 	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/54046/glass_droplets.jpeg);
 	filter: blur(0);
-	animation: eye-focus $duration ease-in infinite $duration alternate, 
-	  focus-shift $duration ease-in infinite alternate;
+	animation: eye-focus 3s ease-in infinite 3s alternate, 
+	  focus-shift 3s ease-in infinite alternate;
 	opacity: 0.5;
   }
-
-
 
 
 /* carousel */
