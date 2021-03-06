@@ -417,6 +417,26 @@ body, html {
 	height: 60vh;
   }
 
+  .landscape p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	color: black;
+	font-weight: 600;
+  }
+
+  .glass p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	color: black;
+	font-weight: 600;
+  }
+
   .glass{
 	position: absolute;
 	width: 100%;
