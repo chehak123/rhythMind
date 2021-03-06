@@ -65,19 +65,19 @@ app.get("/:name",(req,res)=>{
 })
 
 app.get("/snow",(req,res)=>{
-  res.redirect("snow");
+  res.render("snow");
 })
 
 app.get("/sea",(req,res)=>{
-  res.redirect("sea");
+  res.render("sea");
 })
 
 app.get("/rain",(req,res)=>{
-  res.redirect("rain");
+  res.render("rain");
 })
 
 app.get("/fireflies",(req,res)=>{
-  res.redirect("fireflies");
+  res.render("fireflies");
 })
 app.get("/",(req,res)=>{
   res.redirect("/auth/spotify");
