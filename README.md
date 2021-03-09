@@ -15,5 +15,5 @@ We utilized various technologies ranging from animation tools, web development t
 
 <b>5. Pexels API</b>: To fetch images corresponding to the emotions displayed on our web app presently
 
-<b>6. Microsoft Azure</b>: To create a conversational, friendly echo chatbot for rythMind which engages in a friendly conversation with the user helping him/her/them talk about 
+<b>6. Microsoft Azure </b>: To create a conversational, friendly echo chatbot for rythMind which engages in a friendly conversation with the user helping him/her/them talk about 
 his emotions and guiding them towards a calming experience by suggesting relevant songs, playlists, meditation or breathing exercise.
