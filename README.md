@@ -11,7 +11,7 @@ We utilized various technologies ranging from animation tools, web development t
 
 <b>3. Backend</b>: Node.js, Express.js
 
-<b>4. Spotify API<?b>: To fetch and manage the relevant catalogs about artists, tracks and playlists
+<b>4. Spotify API</b>: To fetch and manage the relevant catalogs about artists, tracks and playlists
 
 <b>5. Pexels API</b>: To fetch images corresponding to the emotions displayed on our web app presently
 
