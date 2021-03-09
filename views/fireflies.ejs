@@ -9,14 +9,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="/images/favicon.png">
 
     <style type="text/css">
-
   
-
-
-
 .dot{
   width:4px;
   height:4px;
@@ -26,22 +22,20 @@
   border-radius: 20px;
   z-index:2;
 }
-
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(images/firefly_bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
   overflow-y: hidden;
   background-repeat: no-repeat;
   height: 100vh;
 }
-
-
  .firefly-container {
-
-  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/firefly_bg.jpg);
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/images/firefly_bg.jpg);
    padding: 0;
         margin: 0;
         /*height: 87vh;*/
@@ -52,10 +46,83 @@ body {
         /*margin: 2% 5% auto 5%;*/
         background-size: 100% 100%;
 }
-
-
-
-
+.story-btn {
+  position:relative ;
+  display: inline-block;
+  margin-top: 10px;
+  left:210px;
+  top: 2px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ffffff3b;
+        border-color: #000000;
+        cursor: pointer;
+  border:double;
+  color: black;
+  font-family: 'DotGothic16', sans-serif;
+  font-weight:600;
+  
+}
+.story-btn:hover,.rain-btn:active,.rain-btn:focus {
+        background-color: #ffffff8a !important;
+        border-color: #000000;
+        color: #000000;
+        font-weight: 800;
+        outline: none !important;
+        font-weight:600;
+      }
+      .story-styles {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align: center;
+        color: gray;
+        position:absolute;
+        height: auto;
+        width: auto;
+        margin: 200px;
+        font-size:x-large;
+        background-color: transparent;
+        z-index: 2001;
+        display: "none";  
+        /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);	
+ transform:translateY(100%);
+        }
+        .story{
+         
+ /* Apply animation to this element */	
+ -moz-animation: story 25s linear infinite;
+ -webkit-animation: story 25s linear infinite;
+ animation: story 25s linear infinite;
+      }
+/* Move it (define the animation) */
+@-moz-keyframes story {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes story {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes story {
+ 0%   { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%); 
+ }
+}
+.story:hover {
+ -moz-animation-play-state: paused;
+ -webkit-animation-play-state: paused;
+ animation-play-state: paused;
+ }
 @keyframes scaleUpDown {
   0%,
   100% {
@@ -72,7 +139,6 @@ body {
     transform: scaleX(0.95);
   }
 }
-
 @keyframes shake {
   0%,
   100% {
@@ -82,7 +148,6 @@ body {
     transform: skewX(5deg) scale(0.9);
   }
 }
-
 @keyframes particleUp {
   0% {
     opacity: 0;
@@ -99,7 +164,6 @@ body {
     transform: scale(0.5);
   }
 }
-
 @keyframes glow {
   0%,
   100% {
@@ -109,7 +173,6 @@ body {
     background-color: #ff7800;
   }
 }
-
 .fire {
   position: absolute;
   top: calc(91% - 40px);
@@ -121,7 +184,6 @@ body {
   z-index: 2000;
   margin-right: auto;
 }
-
 .fire-main {
   position: absolute;
   height: 100%;
@@ -130,7 +192,6 @@ body {
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
-
 .fire-main .main-fire {
   position: absolute;
   width: 100%;
@@ -140,7 +201,6 @@ body {
   border-radius: 0 40% 60% 40%;
   filter: drop-shadow(0 0 10px #d43322);
 }
-
 .fire-main .particle-fire {
   position: absolute;
   top: 60%;
@@ -154,7 +214,6 @@ body {
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
-
 .fire-right {
   height: 100%;
   width: 100%;
@@ -163,7 +222,6 @@ body {
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
-
 .fire-right .main-fire {
   position: absolute;
   top: 15%;
@@ -175,7 +233,6 @@ body {
   border-radius: 0 40% 60% 40%;
   filter: drop-shadow(0 0 10px #d43322);
 }
-
 .fire-right .particle-fire {
   position: absolute;
   top: 45%;
@@ -190,7 +247,6 @@ body {
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
-
 .fire-left {
   position: absolute;
   height: 100%;
@@ -199,7 +255,6 @@ body {
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
-
 .fire-left .main-fire {
   position: absolute;
   top: 15%;
@@ -211,7 +266,6 @@ body {
   border-radius: 0 40% 60% 40%;
   filter: drop-shadow(0 0 10px #d43322);
 }
-
 .fire-left .particle-fire {
   position: absolute;
   top: 10%;
@@ -224,7 +278,6 @@ body {
   animation: particleUp 3s infinite ease-out 0;
   animation-fill-mode: both;
 }
-
 .fire-bottom .main-fire {
   position: absolute;
   top: 30%;
@@ -240,20 +293,17 @@ body {
   animation-fill-mode: both;
 }
          
-
       .rain_sound {
-        padding-top: 1%;
+        padding-top: 2%;
         float: right;
         z-index: 200;
         margin-bottom: 10px;
         margin-right: 5%;
       }
-
       .rain-sound:hover,.rain-sound:active,.rain-sound:focus {
         outline: none;
         border: none;
       }
-
       .rain-btn {
         border-radius: 2rem;
         margin-left: 5%;
@@ -261,13 +311,13 @@ body {
         font-family: 'DotGothic16', sans-serif;
         border: double;
         font-weight: 600;
+        margin-top: 10px;
         cursor: pointer;
         z-index: 200;
         margin-bottom: 2px;
         position: absolute;
         background-color: #ffffff3b;
       }
-
       .rain-btn:hover,.rain-btn:active,.rain-btn:focus {
         background-color: #ffffff8a !important;
         border-color: #000000;
@@ -275,17 +325,37 @@ body {
         font-weight: 800;
         outline: none !important;
       }
-
-
     </style>
     
   </head>
   <body>
     <button class="rain-btn" onclick="openFullscreen();">Go  Fullscreen</button>
     <audio controls loop autoplay class="rain_sound" >
-       <source src="sounds/firefly_s.mp3" type="audio/mp3">
+       <source src="/sounds/firefly_s.mp3" type="audio/mp3">
     </audio>
     <div class="firefly-container" controls id="myvideo">
+      <button class="story-btn" onclick="toggleCheck()">Read a story</button>
+      <div class="story-styles" id="storyId">
+        Yes, this is not a story, you remind yourself yet again.
+        <br><br> This is as real and lovely and mesmerizing as it can get,
+        <br> this beautiful array of light and dark 
+        <br>hugging your screen worn eyes. 
+        <br>As you keep staring, one of the fireflies settle right on your nose and blink twice. 
+        <br><br>Light. Dark. Light. Dark.
+        <br><br> You smile to yourself, is this what heaven is supposed to feel like? 
+        <br>Only stars and endless calm. 
+        
+        <br><br>You know that it’s just for the night, 
+        <br>that you would be back in your old life in less than eight hours- 
+        <br>but the transition and regret of having to leave is what makes this night even more special. 
+        <br><br>The tranquility of being all alone under these millions of light beacons is almost humbling-
+        <br> it reminds you how you are just a simple speck of particle in this vast teeming universe. 
+        <br><br>The occasional owl hoots into the night while the fire
+        <br> burning nearby is slowly dying out, the embers hissing gently. 
+        <br><br>Your eyes are tired, they feel like closing in to the calm 
+        <br>but your heart is full awake capturing every single moment.
+      </div>
+
       <div class="fire">
         <div class="fire-left">
           <div class="main-fire"></div>
@@ -310,7 +380,6 @@ body {
               
 
     <script type="text/javascript">
-
         var elem = document.querySelector("#myvideo");
         function openFullscreen() {
           if (elem.requestFullscreen) {
@@ -321,7 +390,10 @@ body {
             elem.msRequestFullscreen();
           }
         }
-
+        function toggleCheck(){
+          var st=document.getElementById("storyId");
+          st.classList.add("story");
+        }
     </script>
 
 
@@ -331,24 +403,18 @@ body {
 <script>
        
 var total=40,container=document.querySelector('.firefly-container'),w=window.innerWidth,h=window.innerHeight,Tweens=[],SPs=1;
-
 for (var i=total;i--;){ 
   var Div=document.createElement('div');
   TweenLite.set(Div,{attr:{class:'dot'},x:R(w),y:R(h),opacity:0});
   container.appendChild(Div); Anim(Div);  Tweens.push(Div);
 };
-
 function Anim(elm){ 
   elm.Tween=TweenLite.to(elm,R(20)+10,{bezier:{values:[{x:R(w),y:R(h)},{x:R(w),y:R(h)}]},opacity:R(1),scale:R(1)+0.5,delay:R(5),onComplete:Anim,onCompleteParams:[elm]})
 };
-
 function R(max){return Math.random()*max};
  
-
-
 window.addEventListener("resize",resize);
 function resize(){w=window.innerWidth;  h=window.innerHeight;};
-
   </script>
 
 
