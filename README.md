@@ -5,7 +5,7 @@ A web app that plays music according to your emotional needs and helps you recha
 ## Tech stack used
 We utilized various technologies ranging from animation tools, web development tools, scripting languages and multiple APIs to build ‘rythMind’.
 
-Front end languages: HTML5, CSS3, Javascript, AJAX
+<b>Front end languages</b>: HTML5, CSS3, Javascript, AJAX
 Front end framework: Bootstrap to design the user interface (UI)
 Backend: Node.js, Express.js
 Spotify API: To fetch and manage the relevant catalogs about artists, tracks and playlists
