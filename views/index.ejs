@@ -94,7 +94,7 @@
 			</div>
 			<br>
 			<div style= "margin-left: 5vw;">
-				<div class="feeling-buttons flex col-md-9 offset-md-2 top-text">
+				<div class="feeling-buttons flex col-xs-12 col-md-9 offset-md-2 top-text">
 
 					<% if(!(currentUser !== undefined && currentUser !== '')) { %>
 						<button type="button" class="btn mood" onclick="feelAlert()" >Depressed</button>
@@ -118,7 +118,7 @@
 					<% } %>
 				</div>
 	
-				<div class="feeling-buttons2 flex col-md-9 offset-md-2 top-text">
+				<div class="feeling-buttons2 flex col-xs-5 col-md-9 offset-md-2 top-text">
 					<% if(!(currentUser !== undefined && currentUser !== '')) { %>
 						<button type="button" class="btn mood" onclick="feelAlert()" >Excited</button>
 						<% } else { %>
@@ -133,7 +133,7 @@
 					<% } %>
 				</div>
 	
-				<div class="feeling-buttons flex col-md-9 offset-md-2 top-text">
+				<div class="feeling-buttons flex col-xs-5 col-md-9 offset-md-2 top-text">
 					<% if(!(currentUser !== undefined && currentUser !== '')) { %>
 						<button type="button" class="btn mood" onclick="feelAlert()" >Anxious</button>
 						<% } else { %>
@@ -161,16 +161,16 @@
 <div id="songs">
 <% if(songs.s1) { %>
 	<h3><strong>Songs Recommended</strong></h3>
-	<iframe src="https://open.spotify.com/embed/track/<%=songs.s1%>" width="300" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-	<iframe src="https://open.spotify.com/embed/track/<%=songs.s2%>" width="300" height="90" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://open.spotify.com/embed/track/<%=songs.s1%>" width="300" height="90" style="margin-right: 3%;" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://open.spotify.com/embed/track/<%=songs.s2%>" width="300" height="90" style="margin-left: 3%;" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 	<br><br><br>
 	<h3><strong>Playlist Recommended</strong></h3>
-	<iframe src="https://open.spotify.com/embed/playlist/<%=songs.p1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-	<iframe src="https://open.spotify.com/embed/playlist/<%=songs.p2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://open.spotify.com/embed/playlist/<%=songs.p1%>" width="300" height="380" frameborder="0" style="margin-right: 7%;" allowtransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://open.spotify.com/embed/playlist/<%=songs.p2%>" width="300" height="380" frameborder="0" style="margin-left: 7%;" allowtransparency="true" allow="encrypted-media"></iframe>
 	<br><br><br>
 	<h3><strong>Album Recommended</strong></h3>
-	<iframe src="https://open.spotify.com/embed/album/<%=songs.a1%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-	<iframe src="https://open.spotify.com/embed/album/<%=songs.a2%>" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://open.spotify.com/embed/album/<%=songs.a1%>" width="300" height="380" frameborder="0" style="margin-right: 11%;" allowtransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://open.spotify.com/embed/album/<%=songs.a2%>" width="300" height="380" frameborder="0" style="margin-left: 11%;" allowtransparency="true" allow="encrypted-media"></iframe>
 	<% } %>
 </div>
 
@@ -178,42 +178,42 @@
 
 <!-- <% if(songs.s1) { %> -->
 	<!-- The slideshow -->
-	<div class="carousel-inner carousel slide" data-attributes="true" data-ride="carousel">
+	<div class="carousel-inner pexels-carousel carousel slide" data-attributes="true" data-ride="carousel">
 	  <div class="carousel-item active" >
-		<img src=<%=image[0]%> alt="Los Angeles">
+		<img src=<%=image[0]%>>
 	  </div>
 	  <div class="carousel-item">
-		<img src=<%=image[1]%> alt="Chicago">
+		<img src=<%=image[1]%>>
 	  </div>
 	  <div class="carousel-item">
-		<img src=<%=image[2]%> alt="New York">
+		<img src=<%=image[2]%>>
 	  </div>
 	  <div class="carousel-item">
-		<img src=<%=image[3]%> alt="New York">
+		<img src=<%=image[3]%>>
 	  </div>
 	  <div class="carousel-item">
-		<img src=<%=image[4]%> alt="New York">
+		<img src=<%=image[4]%>>
 	  </div>
 	  <div class="carousel-item">
-		<img src=<%=image[5]%> alt="New York">
+		<img src=<%=image[5]%>>
 	  </div>
 	  <div class="carousel-item">
-		<img src=<%=image[6]%> alt="New York">
+		<img src=<%=image[6]%>>
 	  </div>
 	  <div class="carousel-item">
-		<img src=<%=image[7]%> alt="New York">
+		<img src=<%=image[7]%>>
 	  </div>
 	   <div class="carousel-item">
-		<img src=<%=image[8]%> alt="New York">
+		<img src=<%=image[8]%>>
 	  </div>
 	  <div class="carousel-item">
-		<img src=<%=image[9]%> alt="New York">
+		<img src=<%=image[9]%>>
 	  </div>
 	  <div class="carousel-item">
-		<img src=<%=image[10]%> alt="New York">
+		<img src=<%=image[10]%>>
 	  </div>
 	  <div class="carousel-item">
-		<img src=<%=image[11]%> alt="New York">
+		<img src=<%=image[11]%>>
 	  </div>
 	</div>
 

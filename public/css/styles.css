@@ -170,6 +170,12 @@ img { max-width: 100%; }
 .navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 0.5rem; }
 
 
+/* Pexels carousel */
+.pexels-carousel {
+	margin-top: 5%;
+	
+}
+
 
 /* Top Content */
 
