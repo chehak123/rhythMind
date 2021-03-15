@@ -248,6 +248,13 @@ img { max-width: 100%; }
 	margin-right: 5%;
 }
 
+@media only screen and (max-width:768px)
+{
+	.sleep-text h3 {
+		margin-top: 25%;
+	}
+}
+
 
 
 
@@ -534,6 +541,11 @@ body, html {
 }
 
 
+#text {
+	margin-top: 8%;
+	margin-bottom: 15%;
+}
+
 .carousel-caption {
 	font-weight: 500;
 }
@@ -550,15 +562,24 @@ body, html {
 	background-color: rgba(228, 225, 225, 0.233);
 	margin-left: 20%;
   }
-  
-  
-  .btnPush:hover {
+
+
+.btnPush:hover {
 	margin-top: 15px;
 	margin-bottom: 5px;
 	font-size: 1.1rem;
 	color: #ffffff;
 	background-color: rgba(132, 187, 236, 0.521);
   }
+
+  @media only screen and (max-width: 400px)
+  {
+	.btnPush {
+		margin-left: 2%;
+	}
+  }
+
+
 
   /* chatbot */
 
@@ -585,6 +606,10 @@ body, html {
 	-webkit-animation-duration: 0.4s;
 	z-index: 9;
   }
+
+  .chat-popup:hover,.chat-popup:active {
+	  outline: none;
+  }
   
   .open-button{
   border-radius: 500px;
@@ -592,6 +617,11 @@ body, html {
   width:90px;
   background-image: url("../images/mickey.png");
 background-size: cover;
+  }
+
+  .open-button:active {
+	  outline: none;
+	  border: none;
   }
   
   @-webkit-keyframes slideIn {
