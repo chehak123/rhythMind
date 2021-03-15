@@ -593,6 +593,14 @@ body, html {
   background-image: url("../images/mickey.png");
 background-size: cover;
   }
+
+  @media screen and (max-width: 468px){
+    .chat-popup iframe{
+		width: 200px;
+		height: 400px;
+	}
+  }
+
   
   @-webkit-keyframes slideIn {
 	from {bottom: -300px; opacity: 0} 
