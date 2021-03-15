@@ -96,13 +96,11 @@
 			<div style= "margin-left: 5vw;">
 				<div class="feeling-buttons flex col-md-9 offset-md-2 top-text">
 
-
-
 					<% if(!(currentUser !== undefined && currentUser !== '')) { %>
-						<button type="button" class="btn mood" onclick="feelAlert()" >Calm</button>
+						<button type="button" class="btn mood" onclick="feelAlert()" >Depressed</button>
 						<% } else { %>
 						<!-- logged in code -->
-						<a href="<%=currentUser%>/search/calm/#songs"><button type="button" class="btn mood">Calm</button></a>
+						<a href="<%=currentUser%>/search/depressed/#songs"><button type="button" class="btn mood">Depressed</button></a>
 					<% } %>
 
 				
@@ -143,10 +141,10 @@
 					<a href="<%=currentUser%>/search/anxious/#songs"><button type="button" class="btn mood">Anxious</button>
 						<% } %>
 						<% if(!(currentUser !== undefined && currentUser !== '')) { %>
-							<button type="button" class="btn mood" onclick="feelAlert()" >Depressed</button>
+							<button type="button" class="btn mood" onclick="feelAlert()" >Calm</button>
 							<% } else { %>
 							<!-- logged in code -->
-						<a href="<%=currentUser%>/search/depressed/#songs"><button type="button" class="btn mood">Depressed</button></a>
+						<a href="<%=currentUser%>/search/calm/#songs"><button type="button" class="btn mood">Calm</button></a>
 						<% } %>
 						<% if(!(currentUser !== undefined && currentUser !== '')) { %>
 							<button type="button" class="btn mood" onclick="feelAlert()" >Cheerful</button>
@@ -178,7 +176,7 @@
 
 
 
-  
+<!-- <% if(songs.s1) { %> -->
 	<!-- The slideshow -->
 	<div class="carousel-inner carousel slide" data-attributes="true" data-ride="carousel">
 	  <div class="carousel-item active" >
@@ -218,6 +216,8 @@
 		<img src=<%=image[11]%> alt="New York">
 	  </div>
 	</div>
+
+	<!-- <% } %> -->
   
 	<!-- Left and right controls -->
 	<a class="carousel-control-prev"  role="button" data-slide="prev">
