@@ -445,6 +445,20 @@ body, html {
 	height: 60vh;
   }
 
+  
+@media screen and (max-width: 480px){
+  .glass p{
+	  font-size: 35px;
+	  font-weight: 700;
+  }
+
+  .landscape p{
+	font-size: 35px;
+	font-weight: 700;
+}
+}
+
+
   @-webkit-keyframes eye-focus {
 	0% {
 	  -webkit-filter: blur(0);
@@ -461,6 +475,8 @@ body, html {
 	  transform: scale(1.01)
 	}
   }
+
+
   .landscape {
 	background: url("../images/scenery.jpg");
 	background-size: cover;
@@ -598,5 +614,8 @@ background-size: cover;
 	to {opacity: 1}
   }
   
+
+
+
   
   
