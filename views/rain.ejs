@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Forest</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -210,6 +211,39 @@
         outline: none !important;
         font-weight:600;
       }
+
+
+@media screen and (max-width:700px)
+ {
+   .rain-btn {
+     visibility: hidden;
+   }
+
+   .story-btn {
+     display: block;
+     margin-top: 20%;
+   }
+
+   .rain-container {
+      background: none;
+   }
+
+   .story-styles {
+     margin: 3%;
+     font-size: 0.8rem;
+     -moz-transform:translateY(140%);
+      -webkit-transform:translateY(140%);	
+      transform:translateY(140%);
+   }
+
+   .story{
+ /* Apply animation to this element */	
+ -moz-animation: story 10s linear 1;
+ -webkit-animation: story 25s linear 1;
+ animation: story 50s linear 1;
+      }
+
+ }
 
 
     </style>
