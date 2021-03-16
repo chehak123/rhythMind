@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+
     <title>Sea</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -46,7 +47,7 @@
         float: right;
         z-index: 1000;
         position: absolute;
-        margin-left: 72%;
+        margin-left: 70%;
         margin-top: 8px;
         outline: none;
         margin-bottom: 10px;
@@ -333,7 +334,44 @@ body, html{
       }
 
 
-      
+
+
+@media screen and (max-width:700px)
+ {
+   .rain-btn {
+     visibility: hidden;
+   }
+
+   .story-btn {
+
+     margin-top: 21%;
+     margin-left: 57%;
+   }
+
+   .sea-container {
+      background: none;
+   }
+
+   .story-styles {
+     margin: 3%;
+     font-size: 0.8rem;
+     -moz-transform:translateY(180%);
+      -webkit-transform:translateY(180%);	
+      transform:translateY(220%);
+   }
+
+   .story{
+ /* Apply animation to this element */	
+ -moz-animation: story 10s linear 1;
+ -webkit-animation: story 25s linear 1;
+ animation: story 50s linear 1;
+      }
+
+ }
+
+ html {
+   overflow-x: hidden;
+ }
 
     </style>
     
@@ -410,29 +448,66 @@ body, html{
     <script type="text/javascript" src="https://rawgit.com/peacepostman/wavify/master/jquery.wavify.js"></script>
 
     <script>
-     var wave1 = $('#feel-the-wave').wavify({
+
+if (window.matchMedia("(max-width: 700px)").matches)
+  {   var wave1 = $('#feel-the-wave').wavify({
+  height: 500,
+  bones: 4,
+  amplitude: 50,
+  color: 'rgb(0, 191, 255)',
+  speed: .15
+});
+}
+else
+{
+    var wave1 = $('#feel-the-wave').wavify({
   height: 250,
   bones: 4,
   amplitude: 60,
   color: 'rgb(0, 191, 255)',
   speed: .15
 });
-
-var wave2 = $('#feel-the-wave-two').wavify({
+}
+/*
+if (window.matchMedia("(max-width: 700px)").matches)
+  { var wave2 = $('#feel-the-wave-two').wavify({
+  height: 380,
+  bones: 3,
+  amplitude: 40,
+  color: 'rgb(0, 128, 255)',
+  speed: .25
+});
+  }
+else
+{
+  { var wave2 = $('#feel-the-wave-two').wavify({
   height: 360,
   bones: 3,
   amplitude: 40,
   color: 'rgb(0, 128, 255)',
   speed: .25
 });
+}
 
-var wave3 = $('#feel-the-wave-three').wavify({
-  height: 420,
-  bones: 2,
-  amplitude: 30,
-  color: 'rgb(0, 64, 255)',
-  speed: .25
-});
+if (window.matchMedia("(max-width: 700px)").matches)
+  {var wave3 = $('#feel-the-wave-three').wavify({
+    height: 440,
+    bones: 2,
+    amplitude: 30,
+    color: 'rgb(0, 64, 255)',
+    speed: .25
+  });
+}
+else
+{
+  {var wave3 = $('#feel-the-wave-three').wavify({
+    height: 420,
+    bones: 2,
+    amplitude: 30,
+    color: 'rgb(0, 64, 255)',
+    speed: .25
+  });
+}*/
 
 var button = document.querySelector(".story-btn");
         var playing = false;

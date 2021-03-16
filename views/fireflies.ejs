@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Camp</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,15 +36,15 @@ body {
   height: 100vh;
 }
  .firefly-container {
-  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/images/firefly_bg.jpg);
-   padding: 0;
+        background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/images/firefly_bg.jpg);
+        padding: 0;
         margin: 0;
-        /*height: 87vh;*/
+
         height: 100%;
         width: 100%;
         
         background-repeat: no-repeat;
-        /*margin: 2% 5% auto 5%;*/
+
         background-size: 100% 100%;
 }
 .story-btn {
@@ -90,7 +91,10 @@ body {
  -webkit-transform:translateY(100%);	
  transform:translateY(100%);
         }
-        .story{
+
+
+
+.story{
          
  /* Apply animation to this element */	
  -moz-animation: story 25s linear 1;
@@ -325,6 +329,45 @@ body {
         font-weight: 800;
         outline: none !important;
       }
+
+
+
+
+@media screen and (max-width:700px)
+ {
+   .rain-btn {
+     visibility: hidden;
+   }
+
+   .story-btn {
+     display: block;
+   }
+
+   .snow-container {
+      background: none;
+   }
+
+   .story-styles {
+     margin: 3%;
+     font-size: 0.8rem;
+     -moz-transform:translateY(140%);
+      -webkit-transform:translateY(140%);	
+      transform:translateY(140%);
+   }
+
+   .story{
+ /* Apply animation to this element */	
+ -moz-animation: story 10s linear 1;
+ -webkit-animation: story 25s linear 1;
+ animation: story 50s linear 1;
+      }
+
+ }
+
+html {
+  overflow-x: hidden;
+}
+
     </style>
     
   </head>
