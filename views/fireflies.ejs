@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Camp</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,29 +24,32 @@
   z-index:2;
 }
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(images/firefly_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(images/firefly_bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   overflow-x: hidden;
   margin: 0;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 0;
   overflow-y: hidden;
   background-repeat: no-repeat;
   height: 100vh;
 }
  .firefly-container {
-        background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/images/firefly_bg.jpg);
-        padding: 0;
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/images/firefly_bg.jpg);
+   padding: 0;
         margin: 0;
-
+        /*height: 87vh;*/
         height: 100%;
         width: 100%;
         
         background-repeat: no-repeat;
-
+        /*margin: 2% 5% auto 5%;*/
         background-size: 100% 100%;
 }
+
 .story-btn {
   position:relative ;
   display: inline-block;
@@ -91,10 +94,7 @@ body {
  -webkit-transform:translateY(100%);	
  transform:translateY(100%);
         }
-
-
-
-.story{
+        .story{
          
  /* Apply animation to this element */	
  -moz-animation: story 25s linear 1;
@@ -331,8 +331,6 @@ body {
       }
 
 
-
-
 @media screen and (max-width:700px)
  {
    .rain-btn {
@@ -341,18 +339,21 @@ body {
 
    .story-btn {
      display: block;
+     margin-top: 20%;
    }
 
-   .snow-container {
-      background: none;
+   .firefly-container {
+      background-size: 120% 100%;
+      margin: 0;
+      padding: 0;
    }
 
    .story-styles {
      margin: 3%;
      font-size: 0.8rem;
-     -moz-transform:translateY(140%);
-      -webkit-transform:translateY(140%);	
-      transform:translateY(140%);
+     -moz-transform:translateY(147%);
+      -webkit-transform:translateY(147%);	
+      transform:translateY(147%);
    }
 
    .story{
@@ -362,11 +363,10 @@ body {
  animation: story 50s linear 1;
       }
 
+      body {
+        background-size: cover;
+      }
  }
-
-html {
-  overflow-x: hidden;
-}
 
     </style>
     
