@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="/images/favicon.png">
 
     <style type="text/css">
 
     body {
       overflow-y: hidden;
       overflow-x: hidden;
-      background:url(images/sea_bg.jpg);
+      background:url(/images/sea_bg.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       height: 100vh;
@@ -26,10 +26,10 @@
     }
 
     .sea-container {
-              background:url(images/sea_bg.jpg);
+              background:url(/images/sea_bg.jpg);
         padding: 0;
         margin: 0;
-
+        position: absolute;
         height: 100%;
         width: 100%;
         
@@ -66,7 +66,7 @@
         border: double;
         font-weight: 600;
         cursor: pointer;
-        z-index: 200;
+        z-index: 1000;
         margin-bottom: 2px;
         position: absolute;
         background-color: #ffffff3b;
@@ -88,11 +88,11 @@
   top:0;
   position: absolute;
   bottom:0;
-  z-index: 2;
+  z-index: 200;
 }
 
 .wave + .wave + .wave{
-  z-index: 2;
+  z-index: 200;
 }
 
 
@@ -144,7 +144,7 @@ body, html{
 }
 #rings div:nth-child(1){
 	animation-duration: 45s;
-	backgrond: rgba(255, 230, 84, 0.5);
+	background: rgba(255, 230, 84, 0.5);
 	width: 130px;
 	height: 130px;
 	margin: -100px 0 0 -100px;
@@ -196,7 +196,7 @@ body, html{
 		-ms-transform: rotate(360deg);
 	}
 }
-@-o-keygrames rotateR{
+@-o-keyframes rotateR{
 	from{
 		-o-transform: rotate(0deg);
 	}
@@ -253,6 +253,86 @@ body, html{
 	}
 }
 
+.story-styles {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        text-align:center;
+        color:darkslategray;
+         position:absolute;  
+        height: auto;
+        width: auto;
+        margin: 300px;
+        font-size:x-large;
+        background-color: transparent;
+        z-index: 3001; 
+      
+         /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);	
+ transform:translateY(100%);
+      }
+      .story{
+ /* Apply animation to this element */	
+ -moz-animation: story 25s linear 1;
+ -webkit-animation: story 25s linear 1;
+ animation: story 25s linear 1;
+      }
+
+/* Move it (define the animation) */
+@-moz-keyframes story {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes story {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes story {
+ 0%   { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-140%); /* Browser bug fix */
+ -webkit-transform: translateY(-140%); /* Browser bug fix */
+ transform: translateY(-140%); 
+ }
+}
+.story:hover {
+ -moz-animation-play-state: paused;
+ -webkit-animation-play-state: paused;
+ animation-play-state: paused;
+ }
+
+ .story-btn {
+  position:absolute ;
+  display: inline-block;
+  z-index: 1000;
+  left:210px;
+  top: 6px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ffffff3b;
+  border-color: #000000;
+  cursor: pointer;
+  border:double;
+  color: black;
+  font-family: 'DotGothic16', sans-serif;
+  font-weight:600;
+  
+}
+.story-btn:hover,.rain-btn:active,.rain-btn:focus {
+        background-color: #ffffff8a !important;
+        border-color: #000000;
+        color: #000000;
+        font-weight: 800;
+        outline: none !important;
+        font-weight:600;
+      }
+
+
       
 
     </style>
@@ -261,10 +341,34 @@ body, html{
   <body>
             <button class="rain-btn" onclick="openFullscreen();">Go  Fullscreen</button>
               <audio controls loop autoplay class="rain_sound" >
-                <source src="sounds/sea_s.mp3" type="audio/mp3">
+                <source src="/sounds/sea_s.mp3" type="audio/mp3">
               </audio>
+              
     <div class="sea-container" controls id="myvideo">
+      <button class="story-btn">Read a story</button>
+      <div class="story-styles" id="storyId">
+        Sea shells on the sea shore,
+        <br><br> you keep playing and replaying the tongue twister 
+        <br>in your mouth while a couple of teenagers cry delightedly 
+        <br>before thrusting their surfing boards into the water. 
+        <br><br>You miss your childhood days almost immediately. 
+        <br><br>The glass of lemonade in your left hand is refreshingly icy, 
+        <br>your skin deliciously tan and the sun is tenderly kissing your feet. 
+        <br><br>The island might be small but it’s a 
+        <br>perfect break from your busy schedule- 
+        <br>just a long, outstretched moment of rest and tranquility.
+        <br><br><br>The palm trees bob their heads with the breeze and 
+        <br>they seem to be whispering to each other the 
+        <br>ancient secrets of this simple beach.
+        <br><br> The sea is not too choppy, not too gentle-
+        <br> just therapeutic enough. 
+        <br>While the slight sea breeze tingles your temples, 
+        <br>you open your book to the dog eared page.
+        <br><br> And just like that, the transportation begins-
+        <br> you feel light, warm and your heart hasn’t been this happy for a long, long time. 
+        <br><br><br>And I think it knows it too.
 
+      </div>
 
       <div id="sun">
         <div id="rings">
@@ -328,6 +432,27 @@ var wave3 = $('#feel-the-wave-three').wavify({
   amplitude: 30,
   color: 'rgb(0, 64, 255)',
   speed: .25
+});
+
+var button = document.querySelector(".story-btn");
+        var playing = false;
+        var st=document.getElementById("storyId");
+button.addEventListener ("click", function (){
+    if ( !playing ) { // If not playing
+        
+        st.classList.add("story");
+
+        // `this` refers to `button`
+        // `innerText` refers to text content in `button`
+        this.innerText = 'Quit Story'; // `this refers to `button1`
+        playing = true;
+    } else {
+        //kirby.style.animation = ""; // clear the animation property
+        st.classList.remove("story");
+        
+        this.innerText = 'Read a Story';
+        playing = false;
+    }
 });
 
 
