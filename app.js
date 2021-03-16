@@ -289,7 +289,6 @@ app.listen(port, function() {
     })
     .then(tokenResponse => {      
       setToken(tokenResponse.data.access_token);
-
       axios('https://api.spotify.com/v1/browse/categories?locale=sv_US', {
         method: 'GET',
         headers: { 'Authorization' : 'Bearer ' + tokenResponse.data.access_token}
