@@ -88,6 +88,19 @@ img { max-width: 100%; }
    border: 1px solid rgb(107, 107, 107);
 }
 
+@media only screen and (max-width:600px)
+{
+	.mood {
+		width: 100px;
+		margin-left: 1%;
+	}
+
+	.feeling-buttons2 {
+		align-items: center;
+		margin-left: 3rem;
+	}
+}
+
 .mood:hover,.mood:active,.mood:focus {
 	background-color: #346d7e;
 	color: #ffffff;

@@ -46,14 +46,6 @@ body {
         /*margin: 2% 5% auto 5%;*/
         background-size: 100% 100%;
 }
-
-@media only screen and (max-width:500px)
-{
-  .firefly-container {
-    background-size: contain;
-  }
-}
-
 .story-btn {
   position:relative ;
   display: inline-block;
@@ -402,8 +394,6 @@ body {
         //   var st=document.getElementById("storyId");
         //   st.classList.add("story");
         // }
-
-
     </script>
 
 
@@ -425,7 +415,6 @@ function R(max){return Math.random()*max};
  
 window.addEventListener("resize",resize);
 function resize(){w=window.innerWidth;  h=window.innerHeight;};
-
 var button = document.querySelector(".story-btn");
         var playing = false;
         var st=document.getElementById("storyId");
@@ -433,7 +422,6 @@ button.addEventListener ("click", function (){
     if ( !playing ) { // If not playing
         
         st.classList.add("story");
-
         // `this` refers to `button1`
         // `innerText` refers to text content in `button1`
         this.innerText = 'Quit Story'; // `this refers to `button1`
@@ -445,8 +433,6 @@ button.addEventListener ("click", function (){
         playing = false;
     }
 });
-
-
   </script>
 
 
