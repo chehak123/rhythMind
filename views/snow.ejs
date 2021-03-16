@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Snow</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -50,7 +51,8 @@
       .rain_sound {
         padding-top: 1%;
         float: right;
-        z-index: 1000;
+        z-index: 3000;
+        display: block;
         outline: none;
         margin-bottom: 10px;
         margin-right: 5%;
@@ -85,7 +87,7 @@
       .story-btn {
   position:relative ;
   display: inline-block;
-  
+  z-index: 3000;
   left:210px;
   top: 2px;
   width: 120px;
@@ -100,7 +102,7 @@
   font-weight:600;
   
 }
-.story-btn:hover,.rain-btn:active,.rain-btn:focus {
+.story-btn:hover,.story-btn:active,.story-btn:focus {
         background-color: #ffffff8a !important;
         border-color: #000000;
         color: #000000;
@@ -120,7 +122,7 @@
         margin: 250px;
         font-size:x-large;
         background-color: transparent;
-        z-index: 2001;
+        
         /* display: "none";  */
       
          /* Starting position */
@@ -161,6 +163,41 @@
  -webkit-animation-play-state: paused;
  animation-play-state: paused;
  }
+
+ @media screen and (max-width:700px)
+ {
+   .rain-btn {
+     visibility: hidden;
+   }
+
+   .story-btn {
+     display: block;
+   }
+
+   .snow-container {
+      background: none;
+   }
+
+   .story-styles {
+     margin: 3%;
+     font-size: 0.8rem;
+     -moz-transform:translateY(140%);
+      -webkit-transform:translateY(140%);	
+      transform:translateY(140%);
+   }
+
+   .story{
+ /* Apply animation to this element */	
+ -moz-animation: story 10s linear 1;
+ -webkit-animation: story 25s linear 1;
+ animation: story 50s linear 1;
+      }
+
+ }
+
+html {
+  overflow: hidden;
+}
 
     </style>
     
