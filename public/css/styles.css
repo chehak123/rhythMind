@@ -380,13 +380,9 @@ footer {
 }
 
 .footer-bottom a:hover, .footer-bottom a:focus { color:#dfe9ec; }
-/*
-@media only screen and (max-width: 767px​) { 
-	.responsive.html_header_sidebar #top { 
-		position: relative; 
-	} 
-}
-*/
+
+@media only screen and (max-width: 767px​){ .responsive.html_header_sidebar #top { position: relative; } }
+
 body, html {
     overflow-x: hidden; }
 
@@ -512,18 +508,16 @@ body, html {
 	background-size: cover;
 	background-position: center;
 	filter: blur(1em);
-	animation: eye-focus 5s ease-in infinite alternate, 
-	  focus-shift 5s ease-in infinite alternate;
+	animation: eye-focus 4s ease-in infinite alternate, 
+	  focus-shift 4s ease-in infinite alternate;
   }
   .glass {
 	background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/54046/glass_droplets.jpeg);
 	filter: blur(0);
-	animation: eye-focus 5s ease-in infinite 5s alternate, 
-	  focus-shift 5s ease-in infinite alternate;
+	animation: eye-focus 4s ease-in infinite 4s alternate, 
+	  focus-shift 4s ease-in infinite alternate;
 	opacity: 0.5;
   }
-
-
 
 
 /* carousel */
@@ -560,13 +554,10 @@ body, html {
    }
    
 
-#carouselExampleControls img{
+.carousel-inner img{
 	height: 97vh;
 	width: auto;
 }
-
-
-
 
 
 #text {
@@ -599,33 +590,13 @@ body, html {
 	color: #ffffff;
 	background-color: rgba(132, 187, 236, 0.521);
   }
-  
-/*
-  @media screen and (max-width: 800px)
-  {
-	#carouselExampleControls img {
-		display: none;
-		height: 0vh;
-	}
 
-	.carousel-caption {
-		z-index: 2000;
-		background: url(/images/forest.jpg);
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
-  }
-*/
-
-  @media screen and (max-width: 400px)
+  @media only screen and (max-width: 400px)
   {
 	.btnPush {
-		margin-left: 1%;
+		margin-left: 2%;
 	}
   }
-
-  
-
 
 
 
