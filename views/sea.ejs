@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
 
     <title>Sea</title>
 
@@ -12,7 +13,6 @@
     <link rel="shortcut icon" href="/images/favicon.png">
 
     <style type="text/css">
-
     body {
       overflow-y: hidden;
       overflow-x: hidden;
@@ -23,9 +23,7 @@
       width: 100%;
       background-attachment: fixed;
       margin: 0;
-
     }
-
     .sea-container {
               background:url(/images/sea_bg.jpg);
         padding: 0;
@@ -35,29 +33,23 @@
         width: 100%;
         
         background-repeat: no-repeat;
-
         background-size: 100% 100%;
       }
  
-
-
-
     .rain_sound {
         padding-top: 1%;
         float: right;
         z-index: 1000;
         position: absolute;
-        margin-left: 70%;
+        margin-left: 72%;
         margin-top: 8px;
         outline: none;
         margin-bottom: 10px;
       }
-
       .rain-sound:hover,.rain-sound:active,.rain-sound:focus {
         outline: none;
         border: none;
       }
-
       .rain-btn {
         border-radius: 2rem;
         margin-top: 7px;
@@ -72,7 +64,6 @@
         position: absolute;
         background-color: #ffffff3b;
       }
-
       .rain-btn:hover,.rain-btn:active,.rain-btn:focus {
         background-color: #ffffff8a !important;
         border-color: #000000;
@@ -80,8 +71,6 @@
         font-weight: 800;
         outline: none !important;
       }
-
-
 .wave {
  
   left:0;
@@ -91,17 +80,12 @@
   bottom:0;
   z-index: 200;
 }
-
 .wave + .wave + .wave{
   z-index: 200;
 }
-
-
-
 body, html{
 	height: 100%;
 }
-
 /* code for the sun  */
 #sun{
 	position: absolute;
@@ -114,7 +98,6 @@ body, html{
 #sun *, #sun *:before, #sun *:after{
 	position: absolute;
 }
-
 /* code for the rings */
 #rings{
 	top: 1%;
@@ -171,7 +154,6 @@ body, html{
 	height: 100px;
 	margin: -85px 0 0 -85px;
 }
-
 /* animations */
 @-webkit-keyframes rotateR{
 	from{
@@ -253,7 +235,6 @@ body, html{
 		transform: rotate(0deg);
 	}
 }
-
 .story-styles {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-style: italic;
@@ -278,7 +259,6 @@ body, html{
  -webkit-animation: story 25s linear 1;
  animation: story 25s linear 1;
       }
-
 /* Move it (define the animation) */
 @-moz-keyframes story {
  0%   { -moz-transform: translateY(100%); }
@@ -305,7 +285,6 @@ body, html{
  -webkit-animation-play-state: paused;
  animation-play-state: paused;
  }
-
  .story-btn {
   position:absolute ;
   display: inline-block;
@@ -333,9 +312,6 @@ body, html{
         font-weight:600;
       }
 
-
-
-
 @media screen and (max-width:700px)
  {
    .rain-btn {
@@ -343,9 +319,13 @@ body, html{
    }
 
    .story-btn {
+     display: block;
+     margin-top: 20%;
+   }
 
-     margin-top: 21%;
-     margin-left: 57%;
+   .rain_sound {
+     margin-left: 25%;
+     margin-top: 2px;
    }
 
    .sea-container {
@@ -355,9 +335,9 @@ body, html{
    .story-styles {
      margin: 3%;
      font-size: 0.8rem;
-     -moz-transform:translateY(180%);
-      -webkit-transform:translateY(180%);	
-      transform:translateY(220%);
+     -moz-transform:translateY(160%);
+      -webkit-transform:translateY(160%);	
+      transform:translateY(160%);
    }
 
    .story{
@@ -367,10 +347,6 @@ body, html{
  animation: story 50s linear 1;
       }
 
- }
-
- html {
-   overflow-x: hidden;
  }
 
     </style>
@@ -421,6 +397,8 @@ body, html{
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="wave"><defs></defs><path id="feel-the-wave" d=""/></svg>
 
         <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="wave"><defs></defs><path id="feel-the-wave-two" d=""/></svg>
+
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="wave"><defs></defs><path id="feel-the-wave-three" d=""/></svg>
       </div>
     </div>
 
@@ -428,7 +406,6 @@ body, html{
 
 
     <script type="text/javascript">
-
         var elem = document.getElementById("myvideo");
         function openFullscreen() {
           if (elem.requestFullscreen) {
@@ -439,7 +416,6 @@ body, html{
             elem.msRequestFullscreen();
           }
         }
-
     </script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
@@ -448,67 +424,27 @@ body, html{
     <script type="text/javascript" src="https://rawgit.com/peacepostman/wavify/master/jquery.wavify.js"></script>
 
     <script>
-
-if (window.matchMedia("(max-width: 700px)").matches)
-  {   var wave1 = $('#feel-the-wave').wavify({
-  height: 500,
-  bones: 4,
-  amplitude: 50,
-  color: 'rgb(0, 191, 255)',
-  speed: .15
-});
-}
-else
-{
-    var wave1 = $('#feel-the-wave').wavify({
+     var wave1 = $('#feel-the-wave').wavify({
   height: 250,
   bones: 4,
   amplitude: 60,
   color: 'rgb(0, 191, 255)',
   speed: .15
 });
-}
-/*
-if (window.matchMedia("(max-width: 700px)").matches)
-  { var wave2 = $('#feel-the-wave-two').wavify({
-  height: 380,
-  bones: 3,
-  amplitude: 40,
-  color: 'rgb(0, 128, 255)',
-  speed: .25
-});
-  }
-else
-{
-  { var wave2 = $('#feel-the-wave-two').wavify({
+var wave2 = $('#feel-the-wave-two').wavify({
   height: 360,
   bones: 3,
   amplitude: 40,
   color: 'rgb(0, 128, 255)',
   speed: .25
 });
-}
-
-if (window.matchMedia("(max-width: 700px)").matches)
-  {var wave3 = $('#feel-the-wave-three').wavify({
-    height: 440,
-    bones: 2,
-    amplitude: 30,
-    color: 'rgb(0, 64, 255)',
-    speed: .25
-  });
-}
-else
-{
-  {var wave3 = $('#feel-the-wave-three').wavify({
-    height: 420,
-    bones: 2,
-    amplitude: 30,
-    color: 'rgb(0, 64, 255)',
-    speed: .25
-  });
-}*/
-
+var wave3 = $('#feel-the-wave-three').wavify({
+  height: 460,
+  bones: 2,
+  amplitude: 30,
+  color: 'rgb(0, 64, 255)',
+  speed: .25
+});
 var button = document.querySelector(".story-btn");
         var playing = false;
         var st=document.getElementById("storyId");
@@ -516,7 +452,6 @@ button.addEventListener ("click", function (){
     if ( !playing ) { // If not playing
         
         st.classList.add("story");
-
         // `this` refers to `button`
         // `innerText` refers to text content in `button`
         this.innerText = 'Quit Story'; // `this refers to `button1`
@@ -529,11 +464,6 @@ button.addEventListener ("click", function (){
         playing = false;
     }
 });
-
-
-
-
-
     </script>
 
   </body>
