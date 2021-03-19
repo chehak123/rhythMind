@@ -671,7 +671,23 @@ background-size: cover;
   }
   
 
-
+/* newsletter */
 
   
-  
+#subsFrm input{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	width: 300px;
+	height: 35px;
+	border-color: transparent;
+}
+
+#subsFrm button{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	/* border-radius: 10px; */
+	/* width: 300px; */
+	/* height: 35px; */
+	border-color: transparent;
+}
