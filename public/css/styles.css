@@ -357,18 +357,25 @@ footer {
 	text-align: left;
 }
 
+/* newsletter */
+
+
+
+
 .footer-right {
 	text-align: right;
 }
 
 .footer-right a {
-	margin: 10% 9px;
+	margin: 7% 9px auto 0;
     font-size: 32px;
     color: #ffffff;
 }
 .footer-right a:hover, .footer-right a:focus { color:#dfe9ec; }
 
 .footer-bottom {
+	margin-top: 10%;
+	margin-left: 5%;
 	padding-bottom: 25px;
 	text-align: center;
 }
@@ -381,7 +388,15 @@ footer {
 
 .footer-bottom a:hover, .footer-bottom a:focus { color:#dfe9ec; }
 
-@media only screen and (max-width: 767px​){ .responsive.html_header_sidebar #top { position: relative; } }
+@media only screen and (max-width: 767px​){ 
+	.responsive.html_header_sidebar #top { position: relative; }
+	
+}
+
+
+
+
+
 
 body, html {
     overflow-x: hidden; }
@@ -671,23 +686,116 @@ background-size: cover;
   }
   
 
-/* newsletter */
 
-  
-#subsFrm input{
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-radius: 10px;
+
+
+/* AR Experience */
+.hover-animation {
+	position: relative;
+	height: 200px;
+	border-radius: 1rem;
 	width: 300px;
-	height: 35px;
-	border-color: transparent;
+	margin: 10% auto 0;
+	color: #ffffff;
 }
 
-#subsFrm button{
-	margin-top: 5px;
-	margin-bottom: 5px;
-	/* border-radius: 10px; */
-	/* width: 300px; */
-	/* height: 35px; */
-	border-color: transparent;
+.hover-animation img {
+	position: absolute;
+	left: 0;
+	width: 300px;
+	height: 260px;
+	border-radius: 1rem;
+	transition: opacity 1s ease-in-out;
+}
+
+.hover-animation img.img-front:hover {
+	opacity: 0;
+	cursor: pointer;
+}
+
+.ar:nth-child(2) {
+	margin-left: 7%;
+}
+
+.ar-container {
+	margin-bottom: 10%;
+}
+
+@media only screen and (max-width:750px)
+{
+	.ar:nth-child(2) {
+		margin-left: 0;
+		margin-top: 15%;
+		
+	}
+	
+}
+
+
+/* Listening room button */
+
+.glow-on-hover {
+	margin-top: 5%;
+    width: 400px;
+    height: 80px;
+    border: none;
+    outline: none;
+	font-size: 1.2rem;
+    color: #fff;
+    background: #346d7e;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #d376bf, #394275);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+	font-weight: 600;
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #346d7e;
+	font-weight: 600;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+	font-weight: 600;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #346d7e;
+    left: 0;
+    top: 0;
+	font-weight: 600;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
